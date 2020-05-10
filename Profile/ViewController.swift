@@ -9,12 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var profile: UIImageView!
+    @IBOutlet var comment: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        profile.isHidden = true
+        comment.isHidden = true
+        
     }
-
+    @IBAction func tap() {
+        profile.isHidden = false
+        comment.isHidden = false
+        
+    }
 
 }
 
